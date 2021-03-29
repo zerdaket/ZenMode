@@ -3,7 +3,6 @@ package com.zerdaket.zenmode.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.zerdaket.zenmode.databinding.ActivityMainBinding
-import com.zerdaket.zenmode.zen.ZenMode
 
 class MainActivity : AppCompatActivity() {
 
