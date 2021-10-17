@@ -18,7 +18,7 @@ object ZenMode {
 
     val isNotificationPolicyAccessGranted get() = notificationManager.isNotificationPolicyAccessGranted
 
-    fun goToGranted() = app.startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS))
+    fun goToGranted() = app.startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
 
     fun addAutomaticZenRule(rule: AutomaticZenRule) = notificationManager.addAutomaticZenRule(rule)
 
